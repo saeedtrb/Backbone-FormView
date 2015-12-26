@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BackboneJS - FormView</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Saeed Torabi">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="form-container"></div>
+	</div>
+</div>
+<!-- scripts file -->
+<script src="../libs/jquery/jquery-min.js?ver=1.11.3"></script>
+<script src="../libs/underscore/underscore-min.js?ver=1.8.3"></script>
+<script src="../libs/backbone/backbone-min.js?ver=1.2.3"></script>
+<script src="../dist/Backbone.FormView.js?ver=1.0.0"></script>
+<script type="text/javascript" charset="utf-8" async defer>
+	var formOBJ = {
+		// first define form attributes
+		action : "http://www.example.com/test",
+		method : "post",
+		// form inputs
+		inputs : {
+			username : {
+				type : "text",
+				// default : "test"
+				label : "Username"
+			},
+			password : {
+				type : "password",
+				label : "password"
+			},
+		}
+	};
+	var formView = new Backbone.FormView( { form : formOBJ } );
+	$("#form-container").html( formView.render() );
+	formView.on("completeRequest" , function(){
+		console.log( arguments );
+	})
+</script>
+</body>
+</html>

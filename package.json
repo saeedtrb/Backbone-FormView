@@ -1,0 +1,12 @@
+{
+  "name": "Backbone-FormView",
+  "version": "1.0.0",
+  "description": "FormView is a simple mechanism to help creating form in the BackboneJS",
+  "dependencies": {
+    "jquery"    : "1.11.3",
+    "underscore": "1.8.3",
+    "Backbone"  : "1.2.3"
+  },
+  "author": "Saeed Torabi",
+  "license": "MIT"
+}

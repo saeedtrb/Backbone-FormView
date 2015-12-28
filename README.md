@@ -9,14 +9,14 @@ var formOBJ = {
 	// form inputs
 	inputs : {
 		username : {
-      type    : "text",
-      default : "test"
-      label   : "Username"
+			type    : "text",
+			default : "test"
+			label   : "Username"
 		},
-		password : {
+			password : {
 			type  : "password",
 			label : "password"
-		},
+		}
 	}
 };
 var formView = new Backbone.FormView( { form : formOBJ } );

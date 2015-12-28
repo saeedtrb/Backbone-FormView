@@ -10,7 +10,7 @@ var formOBJ = {
 	inputs : {
 		username : {
 			type    : "text",
-			default : "test"
+			default : "test",
 			label   : "Username"
 		},
 		password : {

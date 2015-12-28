@@ -13,7 +13,7 @@ var formOBJ = {
 			default : "test"
 			label   : "Username"
 		},
-			password : {
+		password : {
 			type  : "password",
 			label : "password"
 		}
